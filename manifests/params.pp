@@ -8,6 +8,9 @@ class waylon::params {
   $ruby_version       = '2.1.5'
   $unicorn_version    = '4.8.3'
   $waylon_version     = '2.1.4'
+  $install_from_git     = false
+  $git_repo     = 'https://github.com/puppetlabs/waylon.git'
+  $git_ref = 'master'
 
   # Config defaults
   $refresh_interval  = hiera('waylon::config::refresh_interval', '120')
